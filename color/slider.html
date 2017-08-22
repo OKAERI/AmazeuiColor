@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="assets/css/amazeui.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../dist/color.min.css">
+</head>
+
+<body data-type="slider">
+    <div class="am-g">
+        <header class="am-topbar am-topbar-fixed-top">
+            <div class="am-container">
+                <h1 class="am-topbar-brand app-logo">
+                    <a href="index.html"><img src="assets/img/logo.png" alt=""></a>
+                </h1><button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-secondary am-show-sm-only" data-am-collapse="{target:#collapse-head}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+                <div class="am-collapse am-topbar-collapse" id="collapse-head" style="display: none;">
+                    <ul class="am-nav am-nav-pills am-topbar-nav am-fr">
+                        <li data-type="index"><a href="index.html" class="active">首页</a></li>
+                        <li data-type="developer"><a href="developer.html">附加组件</a></li>
+                        <li><a href="http://amazeui.org/">Amaze UI</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <div class="cat-g cat-pt-xs">
+            <div class="cat-wrapper">
+                <div class="am-u-sm-4 am-u-md-4 am-u-lg-3">
+                    <ul class="cat-menu">
+
+                    </ul>
+                </div>
+
+                <div class="am-u-sm-8 am-u-md-8 am-u-lg-9 doc-content cat-doc">
+                    <h1>Slider 滑动输入条 </h1>
+                    <p class="color-padding-bottom">多选框。Amaze UI Color 兼容webkit浏览器，Chrome、Safari以及Opera浏览器生效。</p>
+
+                    <div class="color-padding-top am-cf">
+
+                        <div class="color-padding-bottom-lg color-font-lg">
+                            <i class="am-icon-cog color-margin-right-xs"></i>Slider <small class="color-padding-left-sm">基本使用</small>
+                        </div>
+
+                        <div class="color-form-group am-cf ">
+
+
+                            <div class="am-u-sm-8 am-u-md-8 am-u-lg-9 am-u-end color-margin-bottom-lg">
+                                <input type="hidden" class="color-slider01" value="23" />
+
+                                <button id="color-slider01v" class="color-btn">获取值</button>
+                            </div>
+
+
+
+                            <div class="am-u-sm-8 am-u-md-8 am-u-lg-9 am-u-end color-margin-bottom-lg">
+
+                                <input class="color-slider02" type="hidden" value="0,75" />
+
+                                <button id="color-slider02v" class="color-btn">获取值</button>
+
+                            </div>
+
+
+                            <div class="am-u-md-12">
+                                <div class="color-padding-bottom-xs color-font-lg">
+                                    使用方法
+                                </div>
+                                <hr>
+                                <script type="text/javascript" src="http://runjs.cn/gist/d5rrvqnn"></script>
+                            </div>
+
+
+                        </div>
+
+                        <div class="color-padding-top am-cf">
+
+                            <div class="color-padding-bottom-lg color-font-lg">
+                                <i class="am-icon-cog color-margin-right-xs"></i>Slider<small class="color-padding-left-sm">颜色</small>
+                            </div>
+
+                            <div class="color-form-group am-cf ">
+                                <!-- 单选框 代码开始 -->
+                                <div class="am-u-sm-8 am-u-md-8 am-u-lg-9 am-u-end color-margin-bottom-lg">
+                                    <input type="hidden" class="color-slider03" value="23" />
+
+
+                                </div>
+
+                                <div class="am-u-sm-8 am-u-md-8 am-u-lg-9 am-u-end color-margin-bottom-lg">
+
+                                    <input class="color-slider04" type="hidden" value="0,100" />
+
+
+
+                                </div>
+                                <div class="am-u-sm-8 am-u-md-8 am-u-lg-9 am-u-end color-margin-bottom-lg">
+                                    <input type="hidden" class="color-slider05" value="50" />
+
+                                </div>
+
+                                <div class="am-u-sm-8 am-u-md-8 am-u-lg-9 am-u-end color-margin-bottom-lg">
+
+                                    <input class="color-slider06" type="hidden" value="90" />
+
+
+
+                                </div>
+                                <!-- 单选框 代码结束 -->
+
+                                <div class="am-u-md-12">
+                                    <div class="color-padding-bottom-xs color-font-lg">
+                                        API
+                                    </div>
+                                    <hr>
+                                    <table class="am-table am-table-bordered am-table-hover color-table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th>参数</th>
+                                                <th>说明</th>
+                                                <th>参数</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="am-text-middle">from</td>
+                                                <td class="am-text-middle">开始于</td>
+                                                <td class="am-text-middle">0~100</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="am-text-middle">to</td>
+                                                <td class="am-text-middle">结束于</td>
+                                                <td class="am-text-middle">1~100</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="am-text-middle">step</td>
+                                                <td class="">一次滑动多少</td>
+                                                <td class="am-text-middle">1~100</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="am-text-middle">scale</td>
+                                                <td class="">分割点,例如[0,25,50,100]、[0,50,100]</td>
+                                                <td class="am-text-middle">Array</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="am-text-middle">format</td>
+                                                <td class="">格式化格式</td>
+                                                <td class="am-text-middle">String</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="am-text-middle">width</td>
+                                                <td class="">滑动条宽度</td>
+                                                <td class="am-text-middle">String</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="am-text-middle">theme</td>
+                                                <td class="">颜色主题颜色 color-slider-theme-success、color-slider-theme-danger、color-slider-theme-green、color-slider-theme-warning</td>
+                                                <td class="am-text-middle">String</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="am-text-middle">showLabels</td>
+                                                <td class="">显示已滑动的数值</td>
+                                                <td class="am-text-middle">Boole</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="am-text-middle">showScale</td>
+                                                <td class="">//显示滑动条下方数值注标数字</td>
+                                                <td class="am-text-middle">Boole</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="am-text-middle">isRange </td>
+                                                <td class="">是否显示区间</td>
+                                                <td class="am-text-middle">Boole</td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/amazeui.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="../dist/color.min.js"></script>
+    <link rel="stylesheet" href="assets/css/code.css">
+    <script>
+        $(function() {
+
+            $('.color-slider01').colorSlider({
+                from: 0,
+                to: 100,
+                step: 1,
+                scale: [0, 100],
+                format: '%s',
+                width: '70%',
+                showLabels: true,
+                showScale: false
+            });
+
+            $('.color-slider02').colorSlider({
+                from: 0,
+                to: 100,
+                step: 1,
+                scale: [0, 25, 50, 75, 100],
+                format: '%s',
+                width: '70%',
+                showLabels: true,
+                isRange: true
+            });
+
+            $('.color-slider03').colorSlider({
+                from: 0,
+                to: 100,
+                step: 1,
+                scale: [0, 50, 100],
+                theme: 'color-slider-theme-success',
+                format: '%s',
+                width: '70%',
+                showLabels: true,
+                isRange: true
+            });
+
+            $('.color-slider04').colorSlider({
+                from: 0,
+                to: 100,
+                step: 1,
+                scale: [0, 25, 50, 75, 100],
+                theme: 'color-slider-theme-danger',
+                format: '%s',
+                width: '70%',
+                showLabels: true,
+                isRange: true
+            });
+
+            $('.color-slider05').colorSlider({
+                from: 0,
+                to: 100,
+                step: 1,
+                scale: [0, 100],
+                theme: 'color-slider-theme-green',
+                format: '%s',
+                width: '70%',
+                showLabels: true,
+                isRange: true
+            });
+
+            $('.color-slider06').colorSlider({
+                from: 0,
+                to: 100,
+                step: 1,
+                scale: [0, 100],
+                theme: 'color-slider-theme-warning',
+                format: '%s',
+                width: '70%',
+                showLabels: true,
+                isRange: true
+            });
+
+
+
+            $("#color-slider01v").click(function() {
+
+                var aa = $(".color-slider01").val();
+
+                alert(aa);
+
+            });
+
+            $("#color-slider02v").click(function() {
+
+                var aa = $(".color-slider02").val();
+
+                alert(aa);
+
+            });
+
+        });
+    </script>
+</body>
+
+</html>

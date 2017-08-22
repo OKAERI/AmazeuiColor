@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="assets/css/amazeui.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../dist/color.min.css">
+</head>
+
+<body data-type="collapse">
+    <div class="am-g">
+        <header class="am-topbar am-topbar-fixed-top">
+            <div class="am-container">
+                <h1 class="am-topbar-brand app-logo">
+                    <a href="index.html"><img src="assets/img/logo.png" alt=""></a>
+                </h1><button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-secondary am-show-sm-only" data-am-collapse="{target:#collapse-head}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+                <div class="am-collapse am-topbar-collapse" id="collapse-head" style="display: none;">
+                    <ul class="am-nav am-nav-pills am-topbar-nav am-fr">
+                        <li data-type="index"><a href="index.html" class="active">首页</a></li>
+                        <li data-type="developer"><a href="developer.html">附加组件</a></li>
+                        <li><a href="http://amazeui.org/">Amaze UI</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <div class="cat-g cat-pt-xs">
+            <div class="cat-wrapper">
+                <div class="am-u-sm-4 am-u-md-4 am-u-lg-3">
+                    <ul class="cat-menu">
+
+                    </ul>
+                </div>
+
+                <div class="am-u-sm-8 am-u-md-8 am-u-lg-9 doc-content cat-doc">
+                    <h1>Collapse 折叠面板</h1>
+                    <p class="color-padding-bottom">基于 <a href="http://amazeui.org/javascript/collapse" target="_blank"><strong>Amaze UI 折叠面板 <span class="am-icon-external-link"></span></strong></a> 美化。</p>
+
+                    <div class="color-padding-top am-cf">
+
+                        <div class="color-padding-bottom-lg color-font-lg">
+                            <i class="am-icon-cog color-margin-right-xs"></i>Collapse <small class="color-padding-left-sm">基本使用</small>
+                        </div>
+
+                        <div class="am-u-md-12 am-u-lg-9 am-u-end color-padding-bottom">
+                            <!-- 代码开始 -->
+                            <div class="am-panel-group color-panel-group" id="accordion">
+                                <div class="am-panel am-panel-default color-panel-default">
+                                    <div class="am-panel-hd">
+                                        <h4 class="am-panel-title am-collapsed" data-am-collapse="{parent: '#accordion', target: '#do-not-say-1'}">Amaze UI</h4>
+                                    </div>
+                                    <div id="do-not-say-1" class="am-panel-collapse am-collapse" style="height: 0px;">
+                                        <div class="am-panel-bd">每个人都有一个死角， 自己走不出来，别人也闯不进去。<br>我把最深沉的秘密放在那里。<br>你不懂我，我不怪你。<br><br>每个人都有一道伤口， 或深或浅，盖上布，以为不存在。<br>我把最殷红的鲜血涂在那里。<br>你不懂我，我不怪你。</div>
+                                    </div>
+                                </div>
+                                <div class="am-panel am-panel-default  color-panel-default">
+                                    <div class="am-panel-hd">
+                                        <h4 class="am-panel-title am-collapsed" data-am-collapse="{parent: '#accordion', target: '#do-not-say-2'}">Amaze UI Color</h4>
+                                    </div>
+                                    <div id="do-not-say-2" class="am-panel-collapse am-collapse" style="height: 0px;">
+                                        <div class="am-panel-bd">每个人都有一场爱恋， 用心、用情、用力，感动也感伤。<br>我把最炙热的心情 藏在那里。<br>你不懂我，我不怪你。<br><br>每个人都有 一行眼泪， 喝下的冰冷的水，酝酿成的热泪。<br>我把最心酸的委屈汇在那里。<br>你不懂我，我不怪你。<br><br>每个人都有一段告白， 忐忑、不安，却饱含真心和勇气。<br>我把最抒情的语言用在那里。<br>你不懂我，我不怪你。</div>
+                                    </div>
+                                </div>
+                                <div class="am-panel am-panel-default  color-panel-default">
+                                    <div class="am-panel-hd">
+                                        <h4 class="am-panel-title am-collapsed" data-am-collapse="{parent: '#accordion', target: '#do-not-say-3'}">Amaze UI Bate</h4>
+                                    </div>
+                                    <div id="do-not-say-3" class="am-panel-collapse am-collapse" style="height: 0px;">
+                                        <div class="am-panel-bd">你永远也看不见我最爱你的时候，<br>因为我只有在看不见你的时候，才最爱你。<br>同样，你永远也看不见我最寂寞的时候，<br>因为我只有在你看不见我的时候，我才最寂寞。<br><br>也许，我太会隐藏自己的悲伤。<br>也许，我太会安慰自己的伤痕。<br>也许，你眼中的我，太会照顾自己， 所以，你从不考虑我的感受。<br><br>你以为，我可以很迅速的恢复过来，有些自私的以为。<br>从阴雨走到艳阳，我路过泥泞、路过风。<br>一路走来，你不曾懂我，我亦不曾怪你。<br></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 代码结束 -->
+                        </div>
+
+                    </div>
+
+                    <div class="color-padding-top am-cf">
+
+                        <div class="color-padding-bottom-lg color-font-lg">
+                            <i class="am-icon-cog color-margin-right-xs"></i>Collapse <small class="color-padding-left-sm">美化</small>
+                        </div>
+
+                        <div class="color-form-group am-u-md-12 am-u-lg-9 am-u-end">
+                            <!-- 代码开始 -->
+                            <div class="am-panel-group color-panel-group" id="accordion1">
+                                <div class="am-panel am-panel-default color-panel-border">
+                                    <div class="am-panel-hd">
+                                        <h4 class="am-panel-title am-collapsed  am-text-warning" data-am-collapse="{parent: '#accordion1', target: '#do-not-say-4'}"><i class="am-icon-github"></i> Amaze UI<span class="color-panel-helper">Get Amaze UI Info</span>
+                                            <div class="tool">
+                                                <a href="javascript:;" class="collapse"> </a>
+                                                <a href="javascript:;" class="config"> </a>
+                                                <a href="javascript:;" class="reload"> </a>
+                                                <a href="javascript:;" class="remove"> </a>
+                                            </div>
+                                        </h4>
+                                    </div>
+                                    <div id="do-not-say-4" class="am-panel-collapse am-collapse" style="height: 0px;">
+                                        <div class="am-panel-bd">每个人都有一个死角， 自己走不出来，别人也闯不进去。<br>我把最深沉的秘密放在那里。<br>你不懂我，我不怪你。<br><br>每个人都有一道伤口， 或深或浅，盖上布，以为不存在。<br>我把最殷红的鲜血涂在那里。<br>你不懂我，我不怪你。</div>
+                                    </div>
+                                </div>
+                                <div class="am-panel am-panel-default  color-panel-border">
+                                    <div class="am-panel-hd">
+                                        <h4 class="am-panel-title am-collapsed am-text-success" data-am-collapse="{parent: '#accordion1', target: '#do-not-say-5'}"><i class="am-icon-github"></i> Amaze UI Color<span class="color-panel-helper">Get Amaze UI Info</span>
+                                            <div class="tool">
+                                                <a href="javascript:;" class="collapse"> </a>
+                                                <a href="javascript:;" class="config"> </a>
+                                                <a href="javascript:;" class="reload"> </a>
+                                                <a href="javascript:;" class="remove"> </a>
+                                            </div>
+                                        </h4>
+                                    </div>
+                                    <div id="do-not-say-5" class="am-panel-collapse am-collapse" style="height: 0px;">
+                                        <div class="am-panel-bd">每个人都有一场爱恋， 用心、用情、用力，感动也感伤。<br>我把最炙热的心情 藏在那里。<br>你不懂我，我不怪你。<br><br>每个人都有 一行眼泪， 喝下的冰冷的水，酝酿成的热泪。<br>我把最心酸的委屈汇在那里。<br>你不懂我，我不怪你。<br><br>每个人都有一段告白， 忐忑、不安，却饱含真心和勇气。<br>我把最抒情的语言用在那里。<br>你不懂我，我不怪你。</div>
+                                    </div>
+                                </div>
+                                <div class="am-panel am-panel-default  color-panel-border">
+                                    <div class="am-panel-hd">
+                                        <h4 class="am-panel-title am-collapsed am-text-danger" data-am-collapse="{parent: '#accordion1', target: '#do-not-say-6'}"><i class="am-icon-github"></i> Amaze UI Bate<span class="color-panel-helper">Get Amaze UI Info</span>
+                                            <div class="tool">
+                                                <a href="javascript:;" class="collapse"> </a>
+                                                <a href="javascript:;" class="config"> </a>
+                                                <a href="javascript:;" class="reload"> </a>
+                                                <a href="javascript:;" class="remove"> </a>
+                                            </div>
+                                        </h4>
+                                    </div>
+                                    <div id="do-not-say-6" class="am-panel-collapse am-collapse" style="height: 0px;">
+                                        <div class="am-panel-bd">你永远也看不见我最爱你的时候，<br>因为我只有在看不见你的时候，才最爱你。<br>同样，你永远也看不见我最寂寞的时候，<br>因为我只有在你看不见我的时候，我才最寂寞。<br><br>也许，我太会隐藏自己的悲伤。<br>也许，我太会安慰自己的伤痕。<br>也许，你眼中的我，太会照顾自己， 所以，你从不考虑我的感受。<br><br>你以为，我可以很迅速的恢复过来，有些自私的以为。<br>从阴雨走到艳阳，我路过泥泞、路过风。<br>一路走来，你不曾懂我，我亦不曾怪你。<br></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 代码结束 -->
+
+
+                            <div class="color-padding-bottom-xs color-font-lg color-padding-top">
+                                使用方法
+                            </div>
+                            <hr>
+                            <script type="text/javascript" src="http://runjs.cn/gist/awiydzyw"></script>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+
+
+
+
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/amazeui.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="../dist/color.min.js"></script>
+    <link rel="stylesheet" href="assets/css/code.css">
+    <script>
+        $(function() {
+
+            $('dl#my-collapse').collapse({
+                init: true, // 初始第一个展开, 默认为 true
+                time: 100, // panel展开动画时间, 默认为 100ms
+                dbclose: true, // 在此点击关闭, 默认为 true
+            });
+
+            $('dl#my-collapse1').collapse({
+                init: true, // 初始第一个展开, 默认为 true
+                time: 100, // panel展开动画时间, 默认为 100ms
+                dbclose: true, // 在此点击关闭, 默认为 true
+            });
+
+
+        })
+    </script>
+</body>
+
+</html>

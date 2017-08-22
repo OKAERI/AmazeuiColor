@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="assets/css/amazeui.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../dist/color.min.css">
+</head>
+
+<body data-type="form-datepicker">
+    <div class="am-g">
+        <header class="am-topbar am-topbar-fixed-top">
+            <div class="am-container">
+                <h1 class="am-topbar-brand app-logo">
+                    <a href="index.html"><img src="assets/img/logo.png" alt=""></a>
+                </h1><button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-secondary am-show-sm-only" data-am-collapse="{target:#collapse-head}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+                <div class="am-collapse am-topbar-collapse" id="collapse-head" style="display: none;">
+                    <ul class="am-nav am-nav-pills am-topbar-nav am-fr">
+                        <li data-type="index"><a href="index.html" class="active">首页</a></li>
+                        <li data-type="developer"><a href="developer.html">附加组件</a></li>
+                        <li><a href="http://amazeui.org/">Amaze UI</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <div class="cat-g cat-pt-xs">
+            <div class="cat-wrapper">
+                <div class="am-u-sm-4 am-u-md-4 am-u-lg-3">
+                    <ul class="cat-menu">
+
+                    </ul>
+                </div>
+
+                <div class="am-u-sm-8 am-u-md-8 am-u-lg-9 doc-content cat-doc">
+                    <h1>DatePicker 日期选择框</h1>
+                    <p class="color-padding-bottom">输入或选择日期的控件。此组件基本使用部分，是基于<a href="http://amazeui.org/javascript/datepicker" target="_blank"><strong>Amaze UI 时间框 <span class="am-icon-external-link"></span></strong></a> ，更多功能以及API请移步 Amaze UI 官方手册。</p>
+
+                    <div class="color-padding-top am-cf">
+
+                        <div class="color-font-lg">
+                            <i class="am-icon-cog color-margin-right-xs"></i>DatePicker <small class="color-padding-left-sm">基本使用</small>
+                        </div>
+
+                        <div class="color-form-group am-cf ">
+                            <!-- 单选框 代码开始 -->
+                            <div class="am-u-lg-3 am-u-end color-am-time">
+                                <input type="text" class="am-form-field time-input" placeholder="日期组件" data-am-datepicker="" readonly="readonly" required="">
+                            </div>
+                            <!-- 单选框 代码结束 -->
+                        </div>
+                        <div class="am-u-md-12">
+                            <div class="color-padding-bottom-xs color-font-lg">
+                                使用方法
+                            </div>
+                            <p>在 <span class="color-explain-info-code">input</span> 上增加 <span class="color-explain-info-code">data-am-datepicker</span>属性，调用日期插件。</p>
+                            <hr>
+                            <script src='http://runjs.cn/gist/qnkglpxl/all'></script>
+                        </div>
+
+                    </div>
+
+
+                    <div class="color-padding-top am-cf">
+
+                        <div class="color-font-lg">
+                            <i class="am-icon-cog color-margin-right-xs"></i>Group <small class="color-padding-left-sm">组合使用</small>
+                        </div>
+
+                        <div class="color-form-group am-cf ">
+                            <!-- 单选框 代码开始 -->
+                            <div class="am-u-lg-3 am-u-end color-am-time">
+                                <div class="am-input-group am-datepicker-date" data-am-datepicker="{format: 'dd-mm-yyyy'}"><input type="text" class="am-form-field time-input" placeholder="日期组件" readonly="readonly"> <span class="am-input-group-btn am-datepicker-add-on">
+                                    <button class="am-btn am-btn-default time-btn" type="button"><span class="am-icon-calendar"></span></button>
+                                    </span>
+                                </div>
+                            </div>
+                            <!-- 单选框 代码结束 -->
+                        </div>
+                        <div class="am-u-md-12">
+                            <div class="color-padding-bottom-xs color-font-lg">
+                                使用方法
+                            </div>
+                            <p>结合
+                                <span class="color-explain-info-code">.am-input-group</span> 使用，父类添加 class <span class="color-explain-info-code"> .am-datepicker-date </span> ，非
+                                <span class="color-explain-info-code"> input </span> 触发元素需增加 <span class="color-explain-info-code">.am-datepicker-add-on</span> class。 在</p>
+                            <hr>
+                            <script src='http://runjs.cn/gist/pubgk1gx/all'></script>
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="color-padding-top am-cf">
+
+                        <div class="color-font-lg">
+                            <i class="am-icon-cog color-margin-right-xs"></i>Wap <small class="color-padding-left-sm">移动端专用</small>
+                        </div>
+
+                        <div class="color-form-group am-cf ">
+                            <!-- 单选框 代码开始 -->
+                            请使用Chrome、Safari以及Opera等浏览器，按F12打开开发者工具，模拟手机预览。<a href="form-datepicker-view.html" target="_blank"><strong>效果预览 <span class="am-icon-external-link"></span></strong></a>
+                            <!-- 单选框 代码结束 -->
+                        </div>
+                        <div class="am-u-md-12">
+                            <div class="color-padding-bottom-xs color-font-lg">
+                                使用方法
+                            </div>
+                            <p>为了更好的使用，暂时仅支持手机端，如果需要PC以及WAP都支持请使用 <a href="http://amazeui.org/javascript/datepicker" target="_blank"><strong>Amaze UI 时间框 <span class="am-icon-external-link"></span></strong></a> </p>
+                            <hr>
+                            <script src='http://runjs.cn/gist/2s2kcbqg/all'></script>
+
+                            <div class="color-padding-bottom-lg color-font-lg">
+                                API说明
+                            </div>
+                            <table class="am-table am-table-bordered am-table-hover color-table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>参数</th>
+                                        <th>说明</th>
+                                        <th>类型</th>
+                                        <th>默认值</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="am-text-middle">trigger</td>
+                                        <td class="am-text-middle">目标输入框ID。</td>
+                                        <td class="am-text-middle">String</td>
+                                        <td class="am-text-middle">必填</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="am-text-middle">minDate</td>
+                                        <td class="am-text-middle">最小日期 注意：该值会覆盖标签内定义的日期范围</td>
+                                        <td class="am-text-middle">String</td>
+                                        <td class="am-text-middle">必填</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td class="am-text-middle">maxDate</td>
+                                        <td class="am-text-middle">最大日期 注意：该值会覆盖标签内定义的日期范围</td>
+                                        <td class="am-text-middle">String</td>
+                                        <td class="am-text-middle">必填</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td class="am-text-middle">type</td>
+                                        <td class="am-text-middle">调出日期选择 date 默认 time 调出时间选择 ym 调出年月选择</td>
+                                        <td class="am-text-middle">String</td>
+                                        <td class="am-text-middle">必填</td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+
+
+
+
+
+                </div>
+
+
+
+
+
+
+
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/amazeui.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="../dist/color.min.js"></script>
+    <link rel="stylesheet" href="assets/css/code.css">
+</body>
+
+</html>

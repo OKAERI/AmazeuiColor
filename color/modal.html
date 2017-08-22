@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="assets/css/amazeui.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../dist/color.min.css">
+</head>
+
+<body data-type="modal">
+    <div class="am-g">
+        <header class="am-topbar am-topbar-fixed-top">
+            <div class="am-container">
+                <h1 class="am-topbar-brand app-logo">
+                    <a href="index.html"><img src="assets/img/logo.png" alt=""></a>
+                </h1><button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-secondary am-show-sm-only" data-am-collapse="{target:#collapse-head}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+                <div class="am-collapse am-topbar-collapse" id="collapse-head" style="display: none;">
+                    <ul class="am-nav am-nav-pills am-topbar-nav am-fr">
+                        <li data-type="index"><a href="index.html" class="active">首页</a></li>
+                        <li data-type="developer"><a href="developer.html">附加组件</a></li>
+                        <li><a href="http://amazeui.org/">Amaze UI</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <div class="cat-g cat-pt-xs">
+            <div class="cat-wrapper">
+                <div class="am-u-sm-4 am-u-md-4 am-u-lg-3">
+                    <ul class="cat-menu">
+
+                    </ul>
+                </div>
+
+                <div class="am-u-sm-8 am-u-md-8 am-u-lg-9 doc-content cat-doc">
+                    <h1>Modal 模态窗口</h1>
+                    <p class="color-padding-bottom">模态窗口。</p>
+
+                    <div class="color-padding-top am-cf">
+
+                        <div class="color-padding-bottom-lg color-font-lg">
+                            <i class="am-icon-cog color-margin-right-xs"></i>Modal <small class="color-padding-left-sm">消息窗口</small>
+                        </div>
+
+                        <div class="color-form-group am-cf ">
+                            <!-- 单选框 代码开始 -->
+                            <button type="button" class="am-btn am-radius color-modal-btn-success" data-am-modal="{target: '#doc-modal-1'}">Success</button>
+                            <button type="button" class="am-btn am-radius color-modal-btn-blue" data-am-modal="{target: '#doc-modal-2'}">Blue</button>
+                            <button type="button" class="am-btn am-radius color-modal-btn-red" data-am-modal="{target: '#doc-modal-3'}">Red</button>
+                            <button type="button" class="am-btn am-radius color-modal-btn-yellow" data-am-modal="{target: '#doc-modal-4'}">Yellow</button>
+                            <button type="button" class="am-btn am-radius color-modal-btn-green" data-am-modal="{target: '#doc-modal-5'}">Green</button>
+
+                            <div class="am-modal am-modal-no-btn color-modal-style color-modal-style-green" tabindex="-1" id="doc-modal-5">
+                                <div class="am-modal-dialog">
+                                    <div class="color-modal-style-head am-text-middle">
+                                        <span class="color-modal-style-head-title ">
+                                            升级系统
+                                        </span>
+                                    </div>
+                                    <div class="am-modal-hd">Amaze UI Color
+                                        <a href="javascript: void(0)" class="am-close am-close-spin  color-modal-style-close" data-am-modal-close>&times;</a>
+                                    </div>
+                                    <div class="am-modal-bd">
+                                        Amaze UI Color Modal 内容基于 Amaze UI 基础美化。
+
+                                    </div>
+                                    <div class="color-modal-style-btn">
+                                        <button type="button" class="am-btn am-radius" data-am-modal-close>确认升级</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="am-modal am-modal-no-btn color-modal-style color-modal-style-yellow" tabindex="-1" id="doc-modal-4">
+                                <div class="am-modal-dialog">
+                                    <div class="color-modal-style-head am-text-middle">
+                                        <span class="color-modal-style-head-title ">
+                                            升级系统C
+                                        </span>
+                                    </div>
+                                    <div class="am-modal-hd">Amaze UI Color
+                                        <a href="javascript: void(0)" class="am-close am-close-spin  color-modal-style-close" data-am-modal-close>&times;</a>
+                                    </div>
+                                    <div class="am-modal-bd">
+                                        Amaze UI Color Modal 内容基于 Amaze UI 基础美化。
+
+                                    </div>
+                                    <div class="color-modal-style-btn">
+                                        <button type="button" class="am-btn am-radius" data-am-modal-close>确认升级</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="am-modal am-modal-no-btn color-modal-style color-modal-style-red" tabindex="-1" id="doc-modal-3">
+                                <div class="am-modal-dialog">
+                                    <div class="color-modal-style-head am-text-middle">
+                                        <span class="color-modal-style-head-title ">
+                                            升级系统B
+                                        </span>
+                                    </div>
+                                    <div class="am-modal-hd">Amaze UI Color
+                                        <a href="javascript: void(0)" class="am-close am-close-spin  color-modal-style-close" data-am-modal-close>&times;</a>
+                                    </div>
+                                    <div class="am-modal-bd">
+                                        Amaze UI Color Modal 内容基于 Amaze UI 基础美化。
+
+                                    </div>
+                                    <div class="color-modal-style-btn">
+                                        <button type="button" class="am-btn am-radius" data-am-modal-close>确认升级</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="am-modal am-modal-no-btn color-modal-style color-modal-style-blue" tabindex="-1" id="doc-modal-2">
+                                <div class="am-modal-dialog">
+                                    <div class="color-modal-style-head am-text-middle">
+                                        <span class="color-modal-style-head-title ">
+                                            升级系统A
+                                        </span>
+                                    </div>
+                                    <div class="am-modal-hd">Amaze UI Color
+                                        <a href="javascript: void(0)" class="am-close am-close-spin  color-modal-style-close" data-am-modal-close>&times;</a>
+                                    </div>
+                                    <div class="am-modal-bd">
+                                        Amaze UI Color Modal 内容基于 Amaze UI 基础美化。
+
+                                    </div>
+                                    <div class="color-modal-style-btn">
+                                        <button type="button" class="am-btn am-radius" data-am-modal-close>确认升级</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="am-modal am-modal-no-btn color-modal-style color-modal-style-success" tabindex="-1" id="doc-modal-1">
+                                <div class="am-modal-dialog">
+                                    <div class="color-modal-style-head am-text-middle">
+                                        <span class="color-modal-style-head-title ">
+                                            升级系统
+                                        </span>
+                                    </div>
+                                    <div class="am-modal-hd">Amaze UI Color
+                                        <a href="javascript: void(0)" class="am-close am-close-spin  color-modal-style-close" data-am-modal-close>&times;</a>
+                                    </div>
+                                    <div class="am-modal-bd">
+                                        Amaze UI Color Modal 内容基于 Amaze UI 基础美化。
+
+                                    </div>
+                                    <div class="color-modal-style-btn">
+                                        <button type="button" class="am-btn am-radius" data-am-modal-close>确认升级</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- 单选框 代码结束 -->
+                            <div class="color-padding-top">
+                                <div class="color-padding-bottom-xs color-font-lg">
+                                    使用方法
+                                </div>
+                                <p>在 <span class="color-explain-info-code"> .am-modal </span> 同级添加
+                                    <span class="color-explain-info-code"> .color-modal-style-success </span>、
+                                    <span class="color-explain-info-code"> .color-modal-style-green </span>、
+                                    <span class="color-explain-info-code"> .color-modal-style-yellow </span>、
+                                    <span class="color-explain-info-code"> .color-modal-style-red </span>、
+                                    <span class="color-explain-info-code"> .color-modal-style-blue </span> 即可改变外观。
+                                </p>
+                                <hr>
+                                <script type="text/javascript" src="http://runjs.cn/gist/bmuepqdf"></script>
+                            </div>
+
+
+                            <div class="color-padding-top am-cf">
+
+                                <div class="color-padding-bottom-lg color-font-lg">
+                                    <i class="am-icon-cog color-margin-right-xs"></i>Modal <small class="color-padding-left-sm">状态提示</small>
+                                </div>
+
+                                <div class="color-form-group am-cf ">
+                                    <button type="button" class="am-btn am-radius color-modal-btn-success" data-am-modal="{target: '#doc-modal-6'}">正确</button>
+                                    <button type="button" class="am-btn am-radius color-modal-btn-yellow" data-am-modal="{target: '#doc-modal-7'}">警告</button>
+                                    <button type="button" class="am-btn am-radius color-modal-btn-red" data-am-modal="{target: '#doc-modal-8'}">错误</button>
+
+                                    <div class="am-modal am-modal-no-btn color-modal-alert color-modal-alert-success" tabindex="-1" id="doc-modal-6">
+                                        <div class="am-modal-dialog">
+                                            <div class="color-modal-alert-head">
+                                                <img src="../dist/images/ok.svg" alt="">
+                                            </div>
+                                            <div class="am-modal-hd">升级成功
+                                                <a href="javascript: void(0)" class="am-close am-close-spin  color-modal-alert-close" data-am-modal-close>&times;</a>
+                                            </div>
+                                            <div class="am-modal-bd">
+                                                Amaze UI Color Modal 内容基于 Amaze UI 基础美化。
+
+                                            </div>
+                                            <div class="color-modal-alert-btn">
+                                                <button type="button" class="am-btn am-radius" data-am-modal-close>关闭</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+                                    <div class="am-modal am-modal-no-btn color-modal-alert color-modal-alert-yellow" tabindex="-1" id="doc-modal-7">
+                                        <div class="am-modal-dialog">
+                                            <div class="color-modal-alert-head">
+                                                <img src="../dist/images/warning.svg" alt="">
+                                            </div>
+                                            <div class="am-modal-hd">升级警告
+                                                <a href="javascript: void(0)" class="am-close am-close-spin  color-modal-alert-close" data-am-modal-close>&times;</a>
+                                            </div>
+                                            <div class="am-modal-bd">
+                                                Amaze UI Color Modal 内容基于 Amaze UI 基础美化。
+
+                                            </div>
+                                            <div class="color-modal-alert-btn">
+                                                <button type="button" class="am-btn am-radius" data-am-modal-close>关闭</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="am-modal am-modal-no-btn color-modal-alert color-modal-alert-red" tabindex="-1" id="doc-modal-8">
+                                        <div class="am-modal-dialog">
+                                            <div class="color-modal-alert-head">
+                                                <img src="../dist/images/error.svg" alt="">
+                                            </div>
+                                            <div class="am-modal-hd">升级失败
+                                                <a href="javascript: void(0)" class="am-close am-close-spin  color-modal-alert-close" data-am-modal-close>&times;</a>
+                                            </div>
+                                            <div class="am-modal-bd">
+                                                Amaze UI Color Modal 内容基于 Amaze UI 基础美化。
+
+                                            </div>
+                                            <div class="color-modal-alert-btn">
+                                                <button type="button" class="am-btn am-radius" data-am-modal-close>关闭</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="color-padding-top">
+                                    <div class="color-padding-bottom-xs color-font-lg">
+                                        使用方法
+                                    </div>
+                                    <hr>
+                                    <script type="text/javascript" src="http://runjs.cn/gist/f4674rzd"></script>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+
+
+                </div>
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+    </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/amazeui.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="../dist/color.min.js"></script>
+    <link rel="stylesheet" href="assets/css/code.css">
+</body>
+
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="assets/css/amazeui.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../dist/color.min.css">
+</head>
+
+<body data-type="card">
+    <div class="am-g">
+        <header class="am-topbar am-topbar-fixed-top">
+            <div class="am-container">
+                <h1 class="am-topbar-brand app-logo">
+                    <a href="index.html"><img src="assets/img/logo.png" alt=""></a>
+                </h1><button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-secondary am-show-sm-only" data-am-collapse="{target:#collapse-head}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+                <div class="am-collapse am-topbar-collapse" id="collapse-head" style="display: none;">
+                    <ul class="am-nav am-nav-pills am-topbar-nav am-fr">
+                        <li data-type="index"><a href="index.html" class="active">首页</a></li>
+                        <li data-type="developer"><a href="developer.html">附加组件</a></li>
+                        <li><a href="http://amazeui.org/">Amaze UI</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <div class="cat-g cat-pt-xs">
+            <div class="cat-wrapper">
+                <div class="am-u-sm-4 am-u-md-4 am-u-lg-3">
+                    <ul class="cat-menu">
+
+                    </ul>
+                </div>
+
+                <div class="am-u-sm-8 am-u-md-8 am-u-lg-9 doc-content cat-doc">
+                    <h1>Card 卡片</h1>
+                    <p class="color-padding-bottom">通用卡片容器。</p>
+
+                    <div class="color-padding-top am-cf">
+
+                        <div class="color-padding-bottom-lg color-font-lg">
+                            <i class="am-icon-cog color-margin-right-xs"></i>Card <small class="color-padding-left-sm">基本使用</small>
+                        </div>
+
+                        <div class="color-form-group am-cf ">
+                            <!-- 代码开始 -->
+                            <div class="am-u-md-8 am-u-end color-margin-bottom">
+                                <div class="color-card color-card-bordered">
+                                    <div class="color-card-head">
+                                        <div class="color-card-head-title">Color title</div>
+                                    </div>
+                                    <div class="color-card-extra"><a href="#">more</a></div>
+                                    <div class="color-card-body">
+                                        <p>Amaze UI Color Card</p>
+                                        <p>.color-card-bordered 添加边框</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 代码结束 -->
+                            <div class="am-u-md-8 am-cf  am-u-end  color-margin-bottom">
+                                <div class="color-card color-card-radius color-card-bordered">
+                                    <div class="color-card-head">
+                                        <div class="color-card-head-title">Color title</div>
+                                    </div>
+                                    <div class="color-card-extra"><a href="#">more</a></div>
+                                    <div class="color-card-body">
+                                        <p>Amaze UI Color Card</p>
+                                        <p>.color-card-radius 添加圆角</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 代码结束 -->
+
+                            <div class="am-u-md-12">
+                                <div class="color-padding-bottom-xs color-font-lg">
+                                    使用方法
+                                </div>
+                                <p>可以在<span class="color-explain-info-code">.color-card </span>后添加 <span class="color-explain-info-code">.color-card-radius</span> 圆角样式。 </p>
+                                <hr>
+                                <script type="text/javascript" src="http://runjs.cn/gist/risv4pgr"></script>
+                            </div>
+                        </div>
+
+
+                        <div class="color-padding-bottom-lg color-font-lg">
+                            <i class="am-icon-cog color-margin-right-xs"></i>Card <small class="color-padding-left-sm">更多</small>
+                        </div>
+
+                        <div class="color-form-group am-cf ">
+                            <!-- 代码开始 -->
+                            <div class="am-u-md-8 am-u-end color-margin-bottom">
+                                <div class="color-card color-card-bordered color-card-color">
+                                    <div class="color-card-head">
+                                        <div class="color-card-head-title"> <i class="am-icon-github"></i> Color title</div>
+                                    </div>
+                                    <div class="color-card-extra">
+                                        <div class="tool">
+                                            <a href="javascript:;" class="collapse active"> </a>
+                                            <a href="javascript:;" class="config"> </a>
+                                            <a href="javascript:;" class="reload"> </a>
+                                            <a href="javascript:;" class="remove"> </a>
+                                        </div>
+                                    </div>
+                                    <div class="color-card-body">
+                                        <p>Amaze UI Color Card</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 代码结束 -->
+                            <div class="am-u-md-8 am-u-end color-margin-bottom">
+                                <div class="color-card color-card-bordered color-card-color">
+                                    <div class="color-card-head">
+                                        <div class="color-card-head-title am-text-success"> <i class="am-icon-github"></i> Color title</div>
+                                    </div>
+                                    <div class="color-card-extra">
+                                        <div class="am-dropdown color-card-extra-dropdown" data-am-dropdown>
+                                            <button class="am-btn am-dropdown-toggle" data-am-dropdown-toggle>列表 <span class="am-icon-caret-down"></span></button>
+                                            <ul class="am-dropdown-content">
+                                                <li class="am-dropdown-header">标题</li>
+                                                <li><a href="#">快乐的方式不只一种</a></li>
+                                                <li class="am-active"><a href="#">最荣幸是</a></li>
+                                                <li><a href="#">谁都是造物者的光荣</a></li>
+                                                <li class="am-disabled"><a href="#">就站在光明的角落</a></li>
+                                                <li class="am-divider"></li>
+                                                <li><a href="#">天空海阔 要做最坚强的泡沫</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="color-card-body">
+                                        <p>Amaze UI Color Card</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 代码结束 -->
+
+                            <div class="am-u-md-12">
+                                <div class="color-padding-bottom-xs color-font-lg">
+                                    使用方法
+                                </div>
+                                <hr>
+                                <script type="text/javascript" src="http://runjs.cn/gist/ogvovxvo"></script>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+
+
+
+
+
+
+
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/amazeui.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="../dist/color.min.js"></script>
+    <link rel="stylesheet" href="assets/css/code.css">
+</body>
+
+</html>

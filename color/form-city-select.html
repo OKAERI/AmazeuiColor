@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="assets/css/amazeui.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../dist/color.min.css">
+</head>
+
+<body data-type="form-city-select">
+    <div class="am-g">
+        <header class="am-topbar am-topbar-fixed-top">
+            <div class="am-container">
+                <h1 class="am-topbar-brand app-logo">
+                    <a href="index.html"><img src="assets/img/logo.png" alt=""></a>
+                </h1><button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-secondary am-show-sm-only" data-am-collapse="{target:#collapse-head}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+                <div class="am-collapse am-topbar-collapse" id="collapse-head" style="display: none;">
+                    <ul class="am-nav am-nav-pills am-topbar-nav am-fr">
+                        <li data-type="index"><a href="index.html" class="active">首页</a></li>
+                        <li data-type="developer"><a href="developer.html">附加组件</a></li>
+                        <li><a href="http://amazeui.org/">Amaze UI</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <div class="cat-g cat-pt-xs">
+            <div class="cat-wrapper">
+                <div class="am-u-sm-4 am-u-md-4 am-u-lg-3">
+                    <ul class="cat-menu">
+
+                    </ul>
+                </div>
+
+                <div class="am-u-sm-8 am-u-md-8 am-u-lg-9 doc-content cat-doc">
+                    <h1>CitySelect 城市选择框</h1>
+                    <p class="color-padding-bottom">城市选择框，为了更好的使用，暂时仅支持手机端。</p>
+
+
+
+                    <div class="color-padding-top am-cf">
+
+                        <div class="color-font-lg">
+                            <i class="am-icon-cog color-margin-right-xs"></i>Wap <small class="color-padding-left-sm">移动端专用</small>
+                        </div>
+
+                        <div class="color-form-group am-cf ">
+                            <!-- 单选框 代码开始 -->
+                            请使用Chrome、Safari以及Opera等浏览器，按F12打开开发者工具，模拟手机预览。<a href="form-city-select-view.html" target="_blank"><strong>效果预览 <span class="am-icon-external-link"></span></strong></a>
+                            <!-- 单选框 代码结束 -->
+                        </div>
+                        <div class="am-u-md-12">
+                            <div class="color-padding-bottom-xs color-font-lg">
+                                使用方法
+                            </div>
+                            <hr>
+                            <script src='http://runjs.cn/gist/spwk6af2/all'></script>
+                            <div class="color-padding-bottom-lg color-font-lg">
+                                API说明
+                            </div>
+                            <table class="am-table am-table-bordered am-table-hover color-table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>参数</th>
+                                        <th>说明</th>
+                                        <th>类型</th>
+                                        <th>默认值</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="am-text-middle">trigger</td>
+                                        <td class="am-text-middle">目标输入框ID。</td>
+                                        <td class="am-text-middle">String</td>
+                                        <td class="am-text-middle">必填</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="am-text-middle">valueTo</td>
+                                        <td class="am-text-middle">选择完毕后id属性输出到该位置</td>
+                                        <td class="am-text-middle">String</td>
+                                        <td class="am-text-middle">必填</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td class="am-text-middle">keys</td>
+                                        <td class="am-text-middle">绑定数据源相关字段 id对应valueTo的value属性输出 name对应trigger的value属性输出</td>
+                                        <td class="am-text-middle">Array</td>
+                                        <td class="am-text-middle">必填</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td class="am-text-middle">type</td>
+                                        <td class="am-text-middle">数据源类型</td>
+                                        <td class="am-text-middle">字符串</td>
+                                        <td class="am-text-middle">必填</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td class="am-text-middle">data</td>
+                                        <td class="am-text-middle">数据源</td>
+                                        <td class="am-text-middle">Json</td>
+                                        <td class="am-text-middle">必填</td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+
+
+
+
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/amazeui.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="../dist/color.min.js"></script>
+    <link rel="stylesheet" href="assets/css/code.css">
+</body>
+
+</html>

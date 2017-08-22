@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="assets/css/amazeui.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../dist/color.min.css">
+</head>
+
+<body data-type="form-auto-complete">
+    <div class="am-g">
+        <header class="am-topbar am-topbar-fixed-top">
+            <div class="am-container">
+                <h1 class="am-topbar-brand app-logo">
+                    <a href="index.html"><img src="assets/img/logo.png" alt=""></a>
+                </h1><button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-secondary am-show-sm-only" data-am-collapse="{target:#collapse-head}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+                <div class="am-collapse am-topbar-collapse" id="collapse-head" style="display: none;">
+                    <ul class="am-nav am-nav-pills am-topbar-nav am-fr">
+                        <li data-type="index"><a href="index.html" class="active">首页</a></li>
+                        <li data-type="developer"><a href="developer.html">附加组件</a></li>
+                        <li><a href="http://amazeui.org/">Amaze UI</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <div class="cat-g cat-pt-xs">
+            <div class="cat-wrapper">
+                <div class="am-u-sm-4 am-u-md-4 am-u-lg-3">
+                    <ul class="cat-menu">
+
+                    </ul>
+                </div>
+
+                <div class="am-u-sm-8 am-u-md-8 am-u-lg-9 doc-content cat-doc">
+                    <h1>AutoComplete 自动完成</h1>
+                    <p class="color-padding-bottom">输入框自动完成功能。</p>
+
+                    <div class="color-padding-top am-cf">
+
+                        <div class="color-font-lg">
+                            <i class="am-icon-cog color-margin-right-xs"></i> AutoComplete <small class="color-padding-left-sm">自动展开</small>
+                        </div>
+
+                        <div class="color-form-group am-cf ">
+                            <!-- 单选框 代码开始 -->
+                            <div class="am-u-sm-12 am-u-md-4 am-u-lg-4 am-u-end color-margin-bottom-lg">
+                                <input type="text" class="autosearch color-input"><input type="hidden" name="hd_id" id="hd_id">
+                            </div>
+                            <!-- 单选框 代码结束 -->
+                            <div class="am-u-md-12 color-margin-bottom-xl">
+                                <div class="color-padding-bottom-xs color-font-lg">
+                                    使用方法
+                                </div>
+                                <p>点击输入框自动展开所有数据。 </p>
+                                <hr>
+                                <script src='http://runjs.cn/gist/flktxdyh/all'></script>
+                            </div>
+                        </div>
+
+                        <div class="color-font-lg">
+                            <i class="am-icon-cog color-margin-right-xs"></i> AutoComplete <small class="color-padding-left-sm">Ajax请求</small>
+                        </div>
+
+                        <div class="color-form-group am-cf ">
+                            <!-- 单选框 代码开始 -->
+                            <div class="am-u-sm-12 am-u-md-4 am-u-lg-4 am-u-end color-margin-bottom-lg">
+                                <input type="text" class="autosearch2  color-input">
+                            </div>
+                            <!-- 单选框 代码结束 -->
+                            <div class="am-u-md-12 color-margin-bottom-xl">
+                                <div class="color-padding-bottom-xs color-font-lg">
+                                    使用方法
+                                </div>
+                                <p>Ajax请求，输入文字匹配成功显示出相应数据。 </p>
+                                <hr>
+                                <script src='http://runjs.cn/gist/bxovvlxt/all'></script>
+
+                                <div class="color-padding-bottom-lg color-font-lg">
+                                    API说明
+                                </div>
+                                <table class="am-table am-table-bordered am-table-hover color-table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>参数</th>
+                                            <th>说明</th>
+                                            <th>类型</th>
+                                            <th>默认值</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="am-text-middle">input</td>
+                                            <td class="am-text-middle">输入框,jquery DOM对象</td>
+                                            <td class="am-text-middle">String</td>
+                                            <td class="am-text-middle">必填</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="am-text-middle">autoShow</td>
+                                            <td class="am-text-middle">是否在获得焦点时就显示数据,默认为false</td>
+                                            <td class="am-text-middle">Boole</td>
+                                            <td class="am-text-middle">必填</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td class="am-text-middle">data</td>
+                                            <td class="am-text-middle">数据源，可以传入数组，也可以传入一个方法作为回调返回数据。</td>
+                                            <td class="am-text-middle">-</td>
+                                            <td class="am-text-middle">必填</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td class="am-text-middle">valueObj</td>
+                                            <td class="am-text-middle">赋值框，jquery DOM对象</td>
+                                            <td class="am-text-middle">字符串</td>
+                                            <td class="am-text-middle">必填</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td class="am-text-middle">valueName</td>
+                                            <td class="am-text-middle">属性抓取类型</td>
+                                            <td class="am-text-middle">字符串</td>
+                                            <td class="am-text-middle">必填</td>
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/amazeui.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="../dist/color.min.js"></script>
+    <link rel="stylesheet" href="assets/css/code.css">
+    <script>
+        $.get('../dist/autoComplete/data.txt', function(result) {
+            var input = $('.autosearch');
+            var autosearch = new AutoSearch();
+            autosearch.init({
+                input: input, // 输入框,jquery DOM对象
+                autoShow: true, //是否在获得焦点时就显示数据,默认为false
+                data: result, // 数据源，这里可以传入数据源数组，也可以传入一个方法作为回调返回数据，如果传入的是数组，将作为静态过滤筛选，如果是传入的方法，每次都会调用该方法进来过滤。
+                valueObj: '#hd_id', // 赋值框，jquery DOM对象
+                valueName: "id" // 属性抓取类型
+            });
+        }, 'json')
+
+
+        var input = $('.autosearch2');
+        var autosearch = new AutoSearch();
+        autosearch.init({
+            input: input,
+            autoShow: false,
+            data: function(callback) {
+                $.get('../dist/autoComplete/data.txt', {
+                    key: input.val()
+                }, function(result) {
+                    callback(result);
+                }, 'json');
+            }
+        });
+    </script>
+</body>
+
+</html>

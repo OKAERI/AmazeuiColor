@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="assets/css/amazeui.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../dist/color.min.css">
+</head>
+
+<body data-type="form-word-count">
+    <div class="am-g">
+        <header class="am-topbar am-topbar-fixed-top">
+            <div class="am-container">
+                <h1 class="am-topbar-brand app-logo">
+                    <a href="index.html"><img src="assets/img/logo.png" alt=""></a>
+                </h1><button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-secondary am-show-sm-only" data-am-collapse="{target:#collapse-head}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+                <div class="am-collapse am-topbar-collapse" id="collapse-head" style="display: none;">
+                    <ul class="am-nav am-nav-pills am-topbar-nav am-fr">
+                        <li data-type="index"><a href="index.html" class="active">首页</a></li>
+                        <li data-type="developer"><a href="developer.html">附加组件</a></li>
+                        <li><a href="http://amazeui.org/">Amaze UI</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <div class="cat-g cat-pt-xs">
+            <div class="cat-wrapper">
+                <div class="am-u-sm-4 am-u-md-4 am-u-lg-3">
+                    <ul class="cat-menu">
+
+                    </ul>
+                </div>
+
+                <div class="am-u-sm-8 am-u-md-8 am-u-lg-9 doc-content cat-doc">
+                    <h1>WordCount 文字统计</h1>
+                    <p class="color-padding-bottom">文本框字数统计。</p>
+
+                    <div class="color-padding-top am-cf">
+
+                        <div class="color-padding-bottom-lg color-font-lg">
+                            <i class="am-icon-cog color-margin-right-xs"></i>WordCount <small class="color-padding-left-sm">基本使用</small>
+                        </div>
+
+                        <div class="color-form-group am-cf ">
+                            <!-- 代码开始 -->
+
+                            <div class="am-u-md-5 am-cf">
+                                <input type="text" class="am-form-field color-word-count color-test-word" placeholder="限制12字以内">
+                                <div class="color-padding-top-xs">还可以输入 <span class="color-word-count-counter">12</span> 字。</div>
+                            </div>
+                            <!-- 代码结束 -->
+
+                            <div class="am-u-md-12 color-padding-top">
+                                <div class="color-padding-bottom-xs color-font-lg">
+                                    使用方法
+                                </div>
+                                <!--<p>在switch代码父级添加 <span class="color-explain-info-code"> .color-switch </span> 即可。 在<span class="color-explain-info-code"> input </span>添加 <span class="color-explain-info-code"> checked </span> 开启开关状态。 </p>-->
+                                <hr>
+                                <script src='http://runjs.cn/gist/gzft47p1/all'></script>
+                                <div class="color-padding-bottom-lg color-font-lg">
+                                    API说明
+                                </div>
+                                <table class="am-table am-table-bordered am-table-hover color-table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>参数</th>
+                                            <th>说明</th>
+                                            <th>类型</th>
+                                            <th>默认值</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="am-text-middle">max</td>
+                                            <td class="am-text-middle">最大长度,如果不传会去取文本框的maxlength</td>
+                                            <td class="am-text-middle">Number</td>
+                                            <td class="am-text-middle">必填</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="am-text-middle">isOverflowCut</td>
+                                            <td class="am-text-middle">是否自动截取文本</td>
+                                            <td class="am-text-middle">Boole</td>
+                                            <td class="am-text-middle">true false</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td class="am-text-middle">overClass</td>
+                                            <td class="">显示计数的结点</td>
+                                            <td class="am-text-middle">String</td>
+                                            <td class="am-text-middle"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="am-text-middle">withButton</td>
+                                            <td class="">关联按钮</td>
+                                            <td class="am-text-middle">String</td>
+                                            <td class="am-text-middle"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="am-text-middle">minHeight</td>
+                                            <td class="">文本框的最小高度，因为这里做自适应高度的控制。如没有此参数时，不自适应高度。</td>
+                                            <td class="am-text-middle">Number</td>
+                                            <td class="am-text-middle">-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="am-text-middle">overflowCallback</td>
+                                            <td class="">超出时的回调，this指向当前对象,n为长度,textbox是文本框结点对象,max为最大长度</td>
+                                            <td class="am-text-middle"></td>
+                                            <td class="am-text-middle"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="am-text-middle">changeCallback</td>
+                                            <td class="">长度改变时的回调,n为长度,textbox是文本框结点对象,max为最大长度</td>
+                                            <td class="am-text-middle"></td>
+                                            <td class="am-text-middle"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="am-text-middle">passClallback</td>
+                                            <td class="">长度通过时的回调,n为长度,textbox是文本框结点对象,max为最大长度</td>
+                                            <td class="am-text-middle"></td>
+                                            <td class="am-text-middle"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="am-text-middle">isByte</td>
+                                            <td class="">是否按字节数来计算，true时：一个汉字作2个单位长度，false时汉字英文不作区分</td>
+                                            <td class="am-text-middle">Boole</td>
+                                            <td class="am-text-middle">true false</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+
+
+
+
+
+
+
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/amazeui.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="../dist/color.min.js"></script>
+    <link rel="stylesheet" href="assets/css/code.css">
+    <script>
+        $(function() {
+            $('.color-test-word').WordCount({
+                max: 12, // 最大长度,如果不传会去取文本框的maxlength
+                isOverflowCut: false, // 是否自动截取文本
+                overClass: "color-word-count-over", // 超出文本时的样式,会同时在num上和textbox上添加
+                num: $(".color-word-count-counter"), // 显示计数的结点
+                withButton: ".click", // 关联按钮
+                // minHeight: 100, // 文本框的最小高度，因为这里做自适应高度的控制。如没有此参数时，不自适应高度。
+                overflowCallback: function() {
+                    //超出时的回调，this指向当前对象,n为长度,textbox是文本框结点对象,max为最大长度
+                },
+                changeCallback: function(num) {
+                    //长度改变时的回调,n为长度,textbox是文本框结点对象,max为最大长度
+                },
+                passClallback: function() {
+                    // 长度通过时的回调,n为长度,textbox是文本框结点对象,max为最大长度
+                },
+                isByte: true //是否按字节数来计算，true时：一个汉字作2个单位长度，false时汉字英文不作区分
+            });
+        });
+    </script>
+</body>
+
+</html>

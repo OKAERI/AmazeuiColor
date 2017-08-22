@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="assets/css/amazeui.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../dist/color.min.css">
+</head>
+
+<body data-type="filtrate">
+    <div class="am-g">
+        <header class="am-topbar am-topbar-fixed-top">
+            <div class="am-container">
+                <h1 class="am-topbar-brand app-logo">
+                    <a href="index.html"><img src="assets/img/logo.png" alt=""></a>
+                </h1><button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-secondary am-show-sm-only" data-am-collapse="{target:#collapse-head}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+                <div class="am-collapse am-topbar-collapse" id="collapse-head" style="display: none;">
+                    <ul class="am-nav am-nav-pills am-topbar-nav am-fr">
+                        <li data-type="index"><a href="index.html" class="active">首页</a></li>
+                        <li data-type="developer"><a href="developer.html">附加组件</a></li>
+                        <li><a href="http://amazeui.org/">Amaze UI</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <div class="cat-g cat-pt-xs">
+            <div class="cat-wrapper">
+                <div class="am-u-sm-4 am-u-md-4 am-u-lg-3">
+                    <ul class="cat-menu">
+
+                    </ul>
+                </div>
+
+                <div class="am-u-sm-8 am-u-md-8 am-u-lg-9 doc-content cat-doc">
+                    <h1>filtrate 分类筛选</h1>
+                    <p class="color-padding-bottom">分类筛选。</p>
+
+                    <div class="color-padding-top am-cf">
+
+                        <div class="color-padding-bottom-lg color-font-lg">
+                            <i class="am-icon-cog color-margin-right-xs"></i>filtrate <small class="color-padding-left-sm">分类筛选</small>
+                        </div>
+
+                        <div class="color-form-group am-cf ">
+                            <!-- 单选框 代码开始 -->
+                            <div class="color-filtrate">
+                                <div id="filtrate-color"></div>
+                                <div id="filtrate-color-more"></div>
+                                <br>
+
+                                <div class="am-u-sm-3 am-u-md-3 am-u-lg-3 am-u-end">
+                                    <p>第一行 已选择的ID</p>
+                                    <input id="filtrate-color-value" type="text" class="color-input" value="">
+                                </div>
+                                <div class="am-u-sm-3 am-u-md-3 am-u-lg-3 am-u-end">
+                                    <p>第二行 已选择的ID</p>
+                                    <input id="filtrate-color-more-value" class="color-input" type="text" value="">
+                                </div>
+                            </div>
+                            <!-- 单选框 代码结束 -->
+
+
+                        </div>
+                        <div class="am-u-md-12">
+                            <div class="color-padding-bottom-xs color-font-lg">
+                                使用方法
+                            </div>
+                            <hr>
+                            <script type="text/javascript" src="http://runjs.cn/gist/asono4cp"></script>
+                            <div class="color-padding-bottom-lg color-font-lg">
+                                API说明
+                            </div>
+
+                            <table class="am-table am-table-bordered am-table-hover color-table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>参数</th>
+                                        <th>说明</th>
+                                        <th>参数</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="am-text-middle">url</td>
+                                        <td class="am-text-middle">Ajax 请求地址，为空的时候数据加载默认为Data</td>
+                                        <td class="am-text-middle"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="am-text-middle">idField</td>
+                                        <td class="am-text-middle">数据对象的值字段</td>
+                                        <td class="am-text-middle"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="am-text-middle">scope</td>
+                                        <td class="">分组，可以设置为空</td>
+                                        <td class="am-text-middle"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="am-text-middle">multiple</td>
+                                        <td class="">多选，默认单选</td>
+                                        <td class="am-text-middle">Boole</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="am-text-middle">data</td>
+                                        <td class="">默认数据，当url 不为空时候Data 无效</td>
+                                        <td class="am-text-middle"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="am-text-middle">unlimit</td>
+                                        <td class="">是否显示不限，默认显示</td>
+                                        <td class="am-text-middle">Boole</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="am-text-middle">unlimitText</td>
+                                        <td class="">设置默认文字</td>
+                                        <td class="am-text-middle"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="am-text-middle">param</td>
+                                        <td class="">Ajax 请求的参数</td>
+                                        <td class="am-text-middle"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="am-text-middle">onClick</td>
+                                        <td class="">单击事件，当前点击documnet对象对应的数据对象分 onClick: function(itemData) {}</td>
+                                        <td class="am-text-middle"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="am-text-middle">onChange</td>
+                                        <td class="">值改变事件 参数为当前已经选择的全部值 onChange: function(newValue) {}</td>
+                                        <td class="am-text-middle"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="am-text-middle">onLoadSuccess</td>
+                                        <td class="">加载完成事件 参数为全部数据 onLoadSuccess: function(data) {}</td>
+                                        <td class="am-text-middle"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="am-text-middle">onError</td>
+                                        <td class="">加载错误事件 onError: function(e) {}</td>
+                                        <td class="am-text-middle"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+
+
+
+
+
+
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/amazeui.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="../dist/color.min.js"></script>
+    <link rel="stylesheet" href="assets/css/code.css">
+    <script>
+        var data = [{
+            "id": 1,
+            "text": 'Amaze UI'
+        }, {
+            "id": 2,
+            "text": 'Amaze UI Color'
+        }, {
+            "id": 3,
+            "text": 'Amaze UI Bate'
+        }, {
+            "id": 4,
+            "text": 'New Amaze UI'
+        }];
+
+        var more = [{
+            "id": 1,
+            "text": 'React'
+        }, {
+            "id": 2,
+            "text": 'Vue'
+        }, {
+            "id": 3,
+            "text": 'JQuery'
+        }, {
+            "id": 4,
+            "text": 'ES6'
+        }, {
+            "id": 5,
+            "text": 'Touch'
+        }, {
+            "id": 6,
+            "text": '钉钉'
+        }];
+
+        $('#filtrate-color').comboboxfilter({
+            data: data,
+            onChange: function(newValue) {
+                $('#filtrate-color-value').val(newValue);
+            }
+        });
+        $('#filtrate-color-more').comboboxfilter({
+            data: more,
+            onChange: function(newValue) {
+                $('#filtrate-color-more-value').val(newValue);
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="assets/css/amazeui.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../dist/color.min.css">
+</head>
+
+<body data-type="form-switch">
+    <div class="am-g">
+        <header class="am-topbar am-topbar-fixed-top">
+            <div class="am-container">
+                <h1 class="am-topbar-brand app-logo">
+                    <a href="index.html"><img src="assets/img/logo.png" alt=""></a>
+                </h1><button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-secondary am-show-sm-only" data-am-collapse="{target:#collapse-head}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+                <div class="am-collapse am-topbar-collapse" id="collapse-head" style="display: none;">
+                    <ul class="am-nav am-nav-pills am-topbar-nav am-fr">
+                        <li data-type="index"><a href="index.html" class="active">首页</a></li>
+                        <li data-type="developer"><a href="developer.html">附加组件</a></li>
+                        <li><a href="http://amazeui.org/">Amaze UI</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <div class="cat-g cat-pt-xs am-cf">
+            <div class="am-u-sm-12 am-u-md-12 am-u-lg-12">
+                <div class="cat-das am-cf color-am-time am-center">
+                    <div class="am-u-sm-12 am-u-end am-center">
+                        <input id="demo1" class="time-input" type="text" readonly="" placeholder="日期选择特效" />
+                    </div>
+                    <div class="am-u-sm-12 am-u-end am-center">
+                        <input id="demo3" class="time-input" type="text" readonly="" placeholder="时间选择特效" />
+                    </div>
+                    <div class="am-u-sm-12 am-u-end am-center">
+                        <input id="demo4" class="time-input" type="text" readonly="" placeholder="年月选择特效" />
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/amazeui.min.js"></script>
+    <script src="assets/js/app.js"></script>
+	<script src="../dist/color.min.js"></script>
+    <link rel="stylesheet" href="assets/css/code.css">
+    <script>
+        var calendar = new colorDate();
+        calendar.init({
+            'trigger': '#demo1', //标签id
+            'type': 'date', //date 调出日期选择 time 调出时间选择 ym 调出年月选择,
+            'minDate': '1900-1-1', //最小日期
+            'maxDate': new Date().getFullYear() + '-' + (new Date().getMonth() + 1) + '-' + new Date().getDate() //最大日期
+        });
+        var calendartime = new colorDate();
+        calendartime.init({
+            'trigger': '#demo3',
+            'type': 'time'
+        });
+        var calendarym = new colorDate();
+        calendarym.init({
+            'trigger': '#demo4',
+            'type': 'ym',
+            'minDate': '1900-1',
+            'maxDate': new Date().getFullYear() + '-' + (new Date().getMonth() + 1)
+        });
+
+    </script>
+</body>
+
+</html>

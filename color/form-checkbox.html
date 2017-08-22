@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="assets/css/amazeui.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../dist/color.min.css">
+</head>
+
+<body data-type="form-checkbox">
+    <div class="am-g">
+        <header class="am-topbar am-topbar-fixed-top">
+            <div class="am-container">
+                <h1 class="am-topbar-brand app-logo">
+                    <a href="index.html"><img src="assets/img/logo.png" alt=""></a>
+                </h1><button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-secondary am-show-sm-only" data-am-collapse="{target:#collapse-head}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+                <div class="am-collapse am-topbar-collapse" id="collapse-head" style="display: none;">
+                    <ul class="am-nav am-nav-pills am-topbar-nav am-fr">
+                        <li data-type="index"><a href="index.html" class="active">首页</a></li>
+                        <li data-type="developer"><a href="developer.html">附加组件</a></li>
+                        <li><a href="http://amazeui.org/">Amaze UI</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <div class="cat-g cat-pt-xs">
+            <div class="cat-wrapper">
+                <div class="am-u-sm-4 am-u-md-4 am-u-lg-3">
+                    <ul class="cat-menu">
+
+                    </ul>
+                </div>
+
+                <div class="am-u-sm-8 am-u-md-8 am-u-lg-9 doc-content cat-doc">
+                    <h1>Checkbox 多选框</h1>
+                    <p class="color-padding-bottom">多选框。Amaze UI Color 兼容webkit浏览器，Chrome、Safari以及Opera浏览器生效。</p>
+
+                    <div class="color-padding-top am-cf">
+
+                        <div class="color-font-lg">
+                            <i class="am-icon-cog color-margin-right-xs"></i> Checkbox <small class="color-padding-left-sm">多选框 列表</small>
+                        </div>
+
+                        <div class="color-form-group am-cf">
+                            <!-- 单选框 代码开始 -->
+                            <div class="am-u-md-12 am-u-end">
+                                <div class="color-checkbox-list">
+                                    <div class="color-checkbox">
+                                        <input type="checkbox" id="checkbox-A" class="color-check">
+                                        <label for="checkbox-A">
+                                            <span class="inc"></span>
+                                            <span class="check"></span>
+                                            <span class="box"></span> Amaze UI </label>
+                                    </div>
+                                    <div class="color-checkbox">
+                                        <input type="checkbox" id="checkbox-B" class="color-check" checked>
+                                        <label for="checkbox-B">
+                                            <span class="inc"></span>
+                                            <span class="check"></span>
+                                            <span class="box"></span> Amaze UI Rubik's cube </label>
+                                    </div>
+                                    <div class="color-checkbox">
+                                        <input type="checkbox" id="checkbox-C" class="color-check">
+                                        <label for="checkbox-C">
+                                            <span class="inc"></span>
+                                            <span class="check"></span>
+                                            <span class="box"></span> Amaze UI Color </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 单选框 代码结束 -->
+                        </div>
+
+                        <div class="am-u-md-12 color-margin-bottom-xl">
+                            <div class="color-padding-bottom-xs color-font-lg">
+                                使用方法
+                            </div>
+                            <!--<p>在<span class="color-explain-info-code"> input </span> 添加 <span class="color-explain-info-code"> checked</span> 更改默认。 </p>-->
+                            <hr>
+                            <script src='http://runjs.cn/gist/ruar05ci/all'></script>
+                        </div>
+
+                        <div class="color-font-lg">
+                            <i class="am-icon-cog color-margin-right-xs"></i> Checkbox <small class="color-padding-left-sm">多选框 颜色</small>
+                        </div>
+
+
+                        <div class="color-form-group am-cf">
+                            <!-- 单选框 代码开始 -->
+
+                            <div class="am-u-md-12 am-u-end color-info">
+                                <div class="color-checkbox-list">
+                                    <div class="color-checkbox">
+                                        <input type="checkbox" id="checkbox-A4" class="color-check">
+                                        <label for="checkbox-A4">
+                                            <span class="inc"></span>
+                                            <span class="check"></span>
+                                            <span class="box"></span> Amaze UI </label>
+                                    </div>
+                                    <div class="color-checkbox">
+                                        <input type="checkbox" id="checkbox-B4" class="color-check" checked>
+                                        <label for="checkbox-B4">
+                                            <span class="inc"></span>
+                                            <span class="check"></span>
+                                            <span class="box"></span> Amaze UI Rubik's cube </label>
+                                    </div>
+                                    <div class="color-checkbox">
+                                        <input type="checkbox" id="checkbox-C4" class="color-check">
+                                        <label for="checkbox-C4">
+                                            <span class="inc"></span>
+                                            <span class="check"></span>
+                                            <span class="box"></span> Amaze UI Color </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 单选框 代码结束 -->
+                        </div>
+                        <div class="am-u-md-12 color-margin-bottom-xl">
+                            <div class="color-padding-bottom-xs color-font-lg">
+                                使用方法
+                            </div>
+                            <p>在<span class="color-explain-info-code"> .color-checkbox </span> 的父级元素添加
+                                <span class="color-explain-info-code"> .color-error</span> 、
+                                <span class="color-explain-info-code"> .color-success</span> 、
+                                <span class="color-explain-info-code"> .color-warning</span> 、
+                                <span class="color-explain-info-code"> .color-info</span> 即可改变单选框颜色。 </p>
+                            <hr>
+                            <script src='http://runjs.cn/gist/tq1mi1i6/all'></script>
+                        </div>
+
+
+
+
+                    </div>
+
+
+                </div>
+
+
+
+
+
+
+
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/amazeui.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="../dist/color.min.js"></script>
+    <link rel="stylesheet" href="assets/css/code.css">
+</body>
+
+</html>

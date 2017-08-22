@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="assets/css/amazeui.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../dist/color.min.css">
+</head>
+
+<body data-type="form-input">
+    <div class="am-g">
+        <header class="am-topbar am-topbar-fixed-top">
+            <div class="am-container">
+                <h1 class="am-topbar-brand app-logo">
+                    <a href="index.html"><img src="assets/img/logo.png" alt=""></a>
+                </h1><button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-secondary am-show-sm-only" data-am-collapse="{target:#collapse-head}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+                <div class="am-collapse am-topbar-collapse" id="collapse-head" style="display: none;">
+                    <ul class="am-nav am-nav-pills am-topbar-nav am-fr">
+                        <li data-type="index"><a href="index.html" class="active">首页</a></li>
+                        <li data-type="developer"><a href="developer.html">附加组件</a></li>
+                        <li><a href="http://amazeui.org/">Amaze UI</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <div class="cat-g cat-pt-xs">
+            <div class="cat-wrapper">
+                <div class="am-u-sm-4 am-u-md-4 am-u-lg-3">
+                    <ul class="cat-menu">
+
+                    </ul>
+                </div>
+
+                <div class="am-u-sm-8 am-u-md-8 am-u-lg-9 doc-content cat-doc">
+                    <h1>Input 输入框</h1>
+                    <p class="color-padding-bottom">Amaze UI Color 输入框，通过鼠标或键盘输入内容。兼容 <a href="http://amazeui.org/css/input-group" target="_blank"><strong>Amaze UI 输入框 <span class="am-icon-external-link"></span></strong></a>，Amaze UI Color 兼容webkit浏览器，Chrome、Safari以及Opera浏览器生效。</p>
+
+                    <div class="color-padding-top am-cf">
+
+                        <div class="color-padding-bottom-lg color-font-lg">
+                            <i class="am-icon-cog color-margin-right-xs"></i> LINK INPUT <small class="color-padding-left-sm">单线条边框</small>
+                        </div>
+                        <div class="am-u-md-12 am-u-lg-9 am-u-end">
+                            <!-- 输入框 代码开始 -->
+                            <div class="color-form-group color-form-line">
+                                <input class="color-form-control" placeholder="Enter your phone" type="text">
+                                <label class="color-form-control-label">常规 输入框</label>
+                                <span class="color-form-control-help">这里是帮助文本...</span>
+                            </div>
+                            <!-- 输入框 代码结束 -->
+                        </div>
+                        <div class="am-u-md-12 am-u-lg-9 am-u-end">
+                            <!-- 输入框 代码开始 -->
+                            <div class="color-form-group color-form-line color-form-color-success">
+                                <input class="color-form-control" placeholder="Success state" type="text">
+                                <label class="color-form-control-label">正确 输入框</label>
+                                <span class="color-form-control-help">这里是帮助文本...</span>
+                            </div>
+                            <!-- 输入框 代码结束 -->
+                        </div>
+                        <div class="am-u-md-12 am-u-lg-9 am-u-end">
+                            <!-- 输入框 代码开始 -->
+                            <div class="color-form-group color-form-line color-form-color-warning">
+                                <input class="color-form-control" placeholder="Warning state" type="text">
+                                <label class="color-form-control-label">警告 输入框</label>
+                                <span class="color-form-control-help">这里是帮助文本...</span>
+                            </div>
+                            <!-- 输入框 代码结束 -->
+                        </div>
+                        <div class="am-u-md-12 color-margin-bottom-xl">
+                            <div class="color-padding-bottom-xs color-font-lg">
+                                使用方法
+                            </div>
+                            <p>在<span class="color-explain-info-code"> .color-form-line </span> 添加 <span class="color-explain-info-code"> .color-form-color-success </span>、<span class="color-explain-info-code"> .color-form-color-warning </span>、<span class="color-explain-info-code"> .color-form-color-error </span>                                可以更改输入框颜色。 </p>
+                            <hr>
+                            <script src='http://runjs.cn/gist/bjumwikv/all'></script>
+                        </div>
+                        <div class="am-u-md-12 am-u-lg-9 am-u-end">
+                            <!-- 输入框 代码开始 -->
+                            <div class="color-form-group color-form-line">
+                                <textarea rows="3" class="color-form-control" placeholder="Enter more text" type="text"></textarea>
+                                <label class="color-form-control-label">多行 输入框</label>
+                            </div>
+                            <!-- 输入框 代码结束 -->
+                        </div>
+                        <div class="am-u-md-12 am-u-lg-9 am-u-end">
+                            <!-- 输入框 代码开始 -->
+                            <div class="color-form-group color-form-line color-form-color">
+                                <input class="color-form-control color-input-lg" placeholder=".color-form-color" type="text">
+                                <label class="color-form-control-label">大型 输入框</label>
+                            </div>
+                            <!-- 输入框 代码结束 -->
+                        </div>
+                        <div class="am-u-md-12 am-u-lg-9 am-u-end">
+                            <!-- 输入框 代码开始 -->
+                            <div class="color-form-group color-form-line">
+                                <input class="color-form-control" placeholder="Disable" disabled type="text">
+                                <label class="color-form-control-label">禁止输入</label>
+                            </div>
+                            <!-- 输入框 代码结束 -->
+                        </div>
+
+                    </div>
+
+                    <div class="color-padding-top am-cf">
+
+                        <div class="color-padding-bottom-lg color-font-lg">
+                            <i class="am-icon-cog color-margin-right-xs"></i> FLOATING LABELS <small class="color-padding-left-sm">单线条边框 浮动字体</small>
+                        </div>
+
+                        <div class="am-u-md-12 am-u-lg-9 am-u-end">
+                            <!-- 输入框 代码开始 -->
+                            <div class="color-form-group color-form-line color-floating-label">
+                                <input class="color-form-control" type="text">
+                                <label class="color-form-control-label">常规 输入框</label>
+                                <span class="color-form-control-help">这里是帮助文本...</span>
+                            </div>
+                            <!-- 输入框 代码结束 -->
+                        </div>
+                        <div class="am-u-md-12 am-u-lg-9 am-u-end">
+                            <!-- 输入框 代码开始 -->
+                            <div class="color-form-group color-form-line color-form-color color-floating-label">
+                                <input class="color-form-control" type="text">
+                                <label class="color-form-control-label">Color 输入框</label>
+                            </div>
+                            <!-- 输入框 代码结束 -->
+                        </div>
+                        <div class="am-u-md-12 am-u-lg-9 am-u-end">
+                            <!-- 输入框 代码开始 -->
+                            <div class="color-form-group color-form-line color-form-color-success color-floating-label">
+                                <input class="color-form-control" type="text">
+                                <label class="color-form-control-label">Color 输入框</label>
+                            </div>
+                            <!-- 输入框 代码结束 -->
+                        </div>
+
+                        <div class="am-u-md-12 color-margin-bottom-xl">
+                            <div class="color-padding-bottom-xs color-font-lg">
+                                使用方法
+                            </div>
+                            <p>在<span class="color-explain-info-code"> .color-form-line </span> 添加 <span class="color-explain-info-code"> .color-floating-label </span> 即可更改输入框形态。 </p>
+                            <hr>
+                            <script type="text/javascript" src="http://runjs.cn/gist/ar0w1kvh"></script>
+                        </div>
+
+                    </div>
+
+
+                    <div class="color-padding-top am-cf">
+
+                        <div class="color-padding-bottom-lg color-font-lg">
+                            <i class="am-icon-cog color-margin-right-xs"></i> LINE INPUT ICO <small class="color-padding-left-sm">单线条边框 图标</small>
+                        </div>
+
+                        <div class="am-u-md-12 am-u-lg-9 am-u-end">
+                            <!-- 输入框 代码开始 -->
+                            <div class="color-form-group color-form-line">
+                                <span class="color-form-control-ico">
+                                    <i class="am-icon-envelope"></i>
+                                </span>
+                                <input class="color-form-control color-form-control-ico-input-left" type="text">
+                                <label class="color-form-control-label">左边图标 输入框</label>
+                                <span class="color-form-control-help">这里是帮助文本...</span>
+                            </div>
+                            <!-- 输入框 代码结束 -->
+                        </div>
+                        <div class="am-u-md-12 am-u-lg-9 am-u-end">
+                            <!-- 输入框 代码开始 -->
+                            <div class="color-form-group color-form-line">
+                                <span class="color-form-control-ico color-form-control-ico-right">
+                                    <i class="am-icon-user"></i>
+                                </span>
+                                <input class="color-form-control" type="text">
+                                <label class="color-form-control-label">右边图标 输入框</label>
+                                <span class="color-form-control-help">这里是帮助文本...</span>
+                            </div>
+                            <!-- 输入框 代码结束 -->
+                        </div>
+                    </div>
+
+
+                    <div class="color-padding-top am-cf">
+
+                        <div class="color-padding-bottom-lg color-font-lg">
+                            <i class="am-icon-cog color-margin-right-xs"></i> LEVEL INPUT <small class="color-padding-left-sm">左右布局 输入框</small>
+                        </div>
+
+                        <div class="am-u-md-12 am-u-lg-9 am-u-end">
+                            <!-- 输入框 代码开始 -->
+                            <div class="color-form-group color-form-line">
+                                <label class="am-u-md-3 color-padding-top-sm color-padding-right-none am-text-right">常规 输入框</label>
+                                <div class="am-u-md-9">
+                                    <input class="color-form-control" placeholder="Enter your phone" type="text">
+                                    <div class="color-form-control-focus"></div>
+                                </div>
+                            </div>
+                            <!-- 输入框 代码结束 -->
+                        </div>
+                        <div class="am-u-md-12 am-u-lg-9 am-u-end">
+                            <!-- 输入框 代码开始 -->
+                            <div class="color-form-group color-form-line  color-form-color">
+                                <label class="am-u-md-3 color-padding-top-sm color-padding-right-none am-text-right">Color 输入框</label>
+                                <div class="am-u-md-9">
+                                    <input class="color-form-control" placeholder="Enter your mail" type="text">
+                                    <div class="color-form-control-focus"></div>
+                                </div>
+                            </div>
+                            <!-- 输入框 代码结束 -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/amazeui.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="../dist/color.min.js"></script>
+    <link rel="stylesheet" href="assets/css/code.css">
+</body>
+
+</html>
